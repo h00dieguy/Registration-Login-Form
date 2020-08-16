@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+
+<body>
+<form name="myForm"  onsubmit="return validateForm()">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Login</h1>
+                <center><span id="numloc"></span></center><br>
+            </div>
+
+            <div class="login-form">
+                <div class="control-group">
+                <input type="text" class="login-field" name="username" placeholder="username" id="login-name">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+
+                <div class="control-group">
+                <input type="password" class="login-field" name="pwd" placeholder="password" id="login-pass">
+                <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+
+                <input type="submit" name="sub" class="btn btn-primary btn-large btn-block" value="Login">
+                <a class="login-link" href="#" id ="fp" onclick="return forgotpass()">Forgot password?</a>
+            </div>
+        </div>
+</form>
+
+<form action="index.html">
+      <span id="acc"><center>Don't have an Account?</center></span><br>
+      <input type="submit" name="sub" class="btn btn-primary btn-large btn-block" value="Register" id="registerbtn">
+</form>
+
+
+<script src="login.js"></script>
+</body>
+
+</html>

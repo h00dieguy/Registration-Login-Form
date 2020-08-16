@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="newreg.css">
+  </head>
+  <body onload='document.myForm.fname.focus()'>
+
+    <form name="myForm"  onsubmit="return validateForm()">
+        <div class="Register-screen">
+
+            <div class="app-title">
+                <h1>Register</h1>
+                <center><span id="numloc"></span></center>
+            </div>
+              <div id="error_message"></div>
+            <div class="login-form">
+                <div class="control-group">
+                <input type="text" class="login-field" name="fname" placeholder="First Name" id="login-fname">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+
+                <input type="text" class="login-field" name="lname" placeholder="Last Name" id="login-lname">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+
+                <div class="control-group">
+                <input type="email" class="login-field" name="email" value="" placeholder="Email" id="login-email">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+
+                <input type="password" class="login-field" name="pwd" placeholder="password" id="login-pass">
+                <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+
+                <div class="control-group">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+                <select name="Gender">
+                  <option id="head" value="gender" selected="selected">Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="RNS">Rather not Say</option>
+                </select>
+
+                <!-- <label class="login-field-icon fui-lock" for="datemin">DoB</label>
+                <input type="date"  id="datemin" name="datemin" placeholder="dob"  min="1930-12-31" placeholder="dob" required> -->
+
+                <input type="text" class="login-field" name="bp" placeholder="Birth Place" id="birth-place">
+                <label class="login-field-icon fui-lock" ></label>
+
+                <input type="text" class="login-field" name="lang" placeholder="Language" id="language">
+                <label class="login-field-icon fui-lock"></label>
+                </div>
+
+
+                <div class="control-group">
+
+                  <input type="text" class="login-field" name="city" placeholder="City" id="city">
+                  <label class="login-field-icon fui-lock"></label>
+
+                  <input type="text" class="login-field" name="dis" placeholder="District" id="district">
+                  <label class="login-field-icon fui-lock"></label>
+
+                  <input type="text" class="login-field" name="zipcode" placeholder="Zip Code" id="zipcode">
+                  <label class="login-field-icon fui-lock"></label>
+                </div>
+
+                <div class="control-group">
+
+                  <label class="login-field-icon fui-lock"></label>
+                  <select>
+                    <option id="head" value="State">State</option>
+                    <option value="Andhra Pradesh (AP)">Andhra Pradesh (AP)</option>
+                    <option value="Assam (AS)">Assam (AS)</option>
+                    <option value="Bihar (BR)">Bihar (BR)</option>
+                    <option value="Chhattisgarh (CG)">Chhattisgarh (CG)</option>
+                    <option value="Goa (GA)">Goa (GA)</option>
+                    <option value="Haryana (HR)">Haryana (HR)</option>
+                    <option value="Himachal Pradesh (HP)">Himachal Pradesh (HP)</option>
+                    <option value="Jharkhand (JH)">Jharkhand (JH)</option>
+                    <option value="Karnataka (KA)">Karnataka (KA)</option>
+                    <option value="Kerala (KL)">Kerala (KL)</option>
+                    <option value="Madhya Pradesh (MP)">Madhya Pradesh (MP)</option>
+                    <option value="Maharashtra (MH)">Maharashtra (MH)</option>
+                    <option value="Manipur (MN)">Manipur (MN)</option>
+                    <option value="Meghalaya (ML)">Meghalaya (ML)</option>
+                    <option value="Mizoram (MZ)">Mizoram (MZ)</option>
+                    <option value="Nagaland (NL)">Nagaland (NL)</option>
+                    <option value="Odisha (OR)">Odisha (OR)</option>
+                    <option value="Punjab (PB)">Punjab (PB)</option>
+                    <option value="Rajasthan (RJ)">Rajasthan (RJ)</option>
+                    <option value="Sikkim (SK)">Sikkim (SK)</option>
+                    <option value="Tamil Nadu (TN)">Tamil Nadu (TN)</option>
+                    <option value="Telangana (TG)">Telangana (TG)</option>
+                    <option value="Tripura (TR)">Tripura (TR)</option>
+                    <option value="Uttar Pradesh (UP)">Uttar Pradesh (UP)</option>
+                    <option value="Uttarakhand (UK)">Uttarakhand (UK)</option>
+                    <option value="West Bengal (WB)">West Bengal (WB)</option>
+                    <option value="Andaman and Nicobar Islands (AN)">Andaman and Nicobar Islands (AN)</option>
+                    <option value="Chandigarh (CH)">Chandigarh (CH)</option>
+                    <option value="Dadra and Nagar Haveli (DN)">Dadra and Nagar Haveli (DN)</option>
+                    <option value="Daman and Diu (DD)">Daman and Diu (DD)</option>
+                    <option value="Delhi (National Capital Territory) (DL)">Delhi (National Capital Territory) (DL)</option>
+                    <option value="Jammu and Kashmir (JK)">Jammu and Kashmir (JK)</option>
+                    <option value="Ladakh (JK)">Ladakh (JK)</option>
+                    <option value="Lakshadweep (LD)">Lakshadweep (LD)</option>
+                    <option value="Puducherry (PY)">Puducherry (PY)</option>
+                  </select>
+
+                  <input type="text" class="login-field" value="" placeholder="Nationality" id="nationality">
+                  <label class="login-field-icon fui-lock" ></label>
+
+                  <input type="phone" class="login-field" name="contact" placeholder="Contact Number" id="contact">
+                  <label class="login-field-icon fui-lock"></label>
+
+                  <!-- <label class="login-field-icon fui-lock"></label>
+                    <select name="payment">
+                      <option id="head" value="cc" selected="selected">Payment</option>
+                      <option value="cc">Credit Card</option>
+                      <option value="dc">Debit Card</option>
+                      <option value="pp">PayPal</option>
+                    </select> -->
+                </div>
+                <input type="submit" name="sub" class="btn btn-primary btn-large btn-block" value="Register">
+            </div>
+          </div>
+        </form>
+        <form action="login.html">
+          <span id="acc"><center>Already have an Account?</center></span><br>
+          <input type="submit" name="sub" class="btn btn-primary btn-large btn-block" value="Login" id="loginbtn">
+        </form>
+
+
+
+<script src="newreg.js"></script>
+  </body>
+</html>

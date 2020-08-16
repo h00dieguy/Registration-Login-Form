@@ -1,0 +1,118 @@
+body {
+font-family: Arial;
+background-color: #1874CD;
+/* #3498DB; dark blue     #1874CD darker blue */
+padding: 50px;
+}
+.login-screen {
+margin: 20px auto;
+width: 500px;
+background-color: #FFF;
+padding: 20px;
+border-radius: 20px
+}
+
+.app-title {
+text-align: center;
+color: #353839;
+}
+
+.login-form {
+text-align: center;
+}
+.control-group {
+margin-bottom: 20px;
+}
+
+input {
+text-align: center;
+background-color: #DCDCDC;
+/* #ECF0F1 - lighter grey #DCDCDC - light grey*/
+border: 5px solid #d3dbff;
+border-radius: 5px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 400px;
+transition: border .5s;
+}
+
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #3498DB;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 6px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #2980B9;
+}
+
+#registerbtn{
+  border: 2px solid transparent;
+  background: #ffffff;
+  color: black;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-color: #3498DB;
+  border-radius: 20px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#registerbtn:hover {
+  background-color: #FCAD11;
+}
+
+#fp:hover{
+  color: #FCAD11;
+}
+
+#acc{
+  color: white;
+}
+
+.login-link {
+  font-size: 15px;
+  color: #444;
+  display: block;
+    margin-top: 30px;
+}
+
+* {
+box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+#numloc{
+  display: inline-flex;
+  background-color: #ffe6e6;
+  color: #e60000;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  text-align: center;
+}
